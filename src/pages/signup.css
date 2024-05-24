@@ -1,0 +1,62 @@
+/* login.css */
+
+/* Center the form vertically and horizontally */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Add some spacing between form elements */
+.form-container ion-item {
+  margin-bottom: 20px;
+}
+
+/* Style the error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Style the button group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  width: 200px;
+}
+
+/* Style the sign-up text */
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-text span {
+  color: blue; /* Change color to a clickable style */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Apply animation to input placeholders */
+.animated-placeholder {
+  position: relative;
+}
+
+.animated-placeholder ion-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+  opacity: 0.5;
+}
+
+.animated-placeholder.ion-focused ion-label,
+.animated-placeholder input:not(:placeholder-shown) + ion-label {
+  transform: translateY(-20px) scale(0.75);
+  opacity: 1;
+}
